@@ -1,19 +1,15 @@
-package ybs.gc;
+package ybs.gc.oom;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class OomHeap {
-
-	private static final List<byte[]> list = new ArrayList<>();
+public class Heap {
 
 	public static void main(String[] args) throws InterruptedException {
-
+		List<byte[]> list = new ArrayList<>();
 		while (true) {
-			byte[] data = new byte[2 << 12];
+			byte[] data = new byte[1 << 13];
 			list.add(data);
-
-			Thread.sleep(1);
 		}
 	}
 

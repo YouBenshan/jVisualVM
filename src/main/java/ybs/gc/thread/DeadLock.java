@@ -1,4 +1,4 @@
-package ybs.gc;
+package ybs.gc.thread;
 
 import java.io.IOException;
 

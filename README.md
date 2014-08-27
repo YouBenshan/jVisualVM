@@ -1,9 +1,35 @@
 gc
 ==
+Goal:
+1. Get familiar with JVM with jVisualVM
+2. detect bad smell code using jVisualVM
+
+Tool:
+Oracle JDK
+tested on: 
+OS:	Windows 7 Professional-SP1, 64-bit
+Processor:	Intel Core i7-4600U
+RAM:	8G 
+JDK: 1.8.0_20
+Maven 3.2.2 and Eclipse 4.4 (Not necessary)
+
+Step:
+
+Get familiar with jVisualVM
+install plugin: Visual GC, and restart
+Observe a application's JVM -- jVisualVM: 
+	Scan every tabs: 
+		Monitor, Thread, Sampler, Visual GC (and Profiler for Some Applications)
+	Scan these pages:
+		http://visualvm.java.net/docindex.html
+		http://visualvm.java.net/plugins.html
+		http://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html
+We'll go deeper on the next steps.
 
 
-cd D:\workspaces\test\gc\target\classes
-d:
+
+
+
 
 -XX:+UseG1GC
 -XX:+UseSerialGC
@@ -13,32 +39,7 @@ d:
 -XX:+UseParNewGC
 
 
-1
--XX:+UseConcMarkSweepGC
--XX:+UseParallelGC
-java -XX:+UseConcMarkSweepGC -Xms512m -Xmx512m ybs.gc.MinorFullGc
-
-2
--XX:+UseG1GC
--XX:+UseSerialGC
--XX:+UseConcMarkSweepGC
--XX:+UseParallelGC
-java -XX:+UseSerialGC -Xms4g -Xmx4g ybs.gc.StopTheWorld
-
-
-java -XX:+UseSerialGC -XX:MaxMetaspaceSize=80m ybs.gc.OomPermGen
-
-java -XX:+UseSerialGC -Xmx128m ybs.gc.OomHeap
-
-
-
-java ybs.gc.StackOverFlow
-
-java -XX:+UseSerialGC -Xmx128m ybs.gc.MemoryLeak
-
-
-java -XX:+UseSerialGC -Xmx128m ybs.gc.Resize
-
+java -XX:+UseParallelGC -Xmx2g ybs.gc.BIO
 
 java -XX:+UseParallelGC -Xmx512m ybs.gc.LockContention
 

@@ -1,19 +1,18 @@
-package ybs.gc;
+package ybs.gc.oom;
 
 public class StackOverFlow {
 
+	private static int size=0;
 	public static void main(String[] args) throws InterruptedException {
-		f(1 << 13);
+		size=Integer.valueOf(args[0]);
+		f(1);
 	}
 
 	public static void f(int n) throws InterruptedException {
-		Thread.sleep(3);
-		// Byte[] byteArray = new Byte[1 << 12];
+		Thread.sleep(2);
+		Byte[] byteArray = new Byte[size];
 		System.out.println(n);
-		if (n > 0) {
-			f(--n);
-		}
-
+		f(++n);
+		System.out.println(byteArray.length);
 	}
-
 }
