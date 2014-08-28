@@ -35,7 +35,7 @@ public class WrongFlush {
 		try {
 			file = File.createTempFile("tmp", "tmp");
 			try (FileWriter fw = new FileWriter(file);
-				BufferedWriter bw = new BufferedWriter(fw, 64*1024);
+				BufferedWriter bw = new BufferedWriter(fw, 8*1024);
 					) {
 				for (int i = 0; i < (1 << 30); i++) {
 					bw.write("a");
