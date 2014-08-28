@@ -13,7 +13,7 @@ RAM:	8G
 JDK: 1.8.0_20
 Maven 3.2.2 and Eclipse 4.4 (Not necessary)
 
-Step:
+KickOff:
 
 Get familiar with jVisualVM
 install plugin: Visual GC, and restart
@@ -27,21 +27,18 @@ Observe a application's JVM -- jVisualVM:
 We'll go deeper on the next steps.
 
 
+Then you can go to next steps:
 
+Minor and Full GC
 
+Out Of Memory
 
+Memory Leak
 
--XX:+UseG1GC
--XX:+UseSerialGC
--XX:+UseConcMarkSweepGC
--XX:+UseParallelGC
--XX:+UseParallelOldGC
--XX:+UseParNewGC
+Resize of Container
 
+Threads
 
-java -XX:+UseParallelGC -Xmx2g ybs.gc.BIO
+CPU is Hight?
 
-java -XX:+UseParallelGC -Xmx512m ybs.gc.LockContention
-
-
-java ybs.gc.PromotionFailure
+Tunning GC

@@ -6,15 +6,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 
-public class WrongFlush {
+public class HighCpu {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-		new Thread(new Runnable(){
-			@Override
-			public void run() {
-				add();
-			}
-		}, "add").start();
+	
 		new Thread(new Runnable(){
 			@Override
 			public void run() {
@@ -35,16 +30,15 @@ public class WrongFlush {
 		try {
 			file = File.createTempFile("tmp", "tmp");
 			try (FileWriter fw = new FileWriter(file);
-				BufferedWriter bw = new BufferedWriter(fw, 8*1024);
+				BufferedWriter bw = new BufferedWriter(fw, 1<<15);
 					) {
 				for (int i = 0; i < (1 << 30); i++) {
 					bw.write("a");
-					bw.flush();
+					bw.flush(); //Wrong!
 				}
 			}
 			file.delete();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		long end = System.currentTimeMillis();
@@ -52,23 +46,12 @@ public class WrongFlush {
 		
 	}
 	
-	private static void add(){
-		long start = System.currentTimeMillis();
-		int v=0;
-		for(int i=0;i<Integer.MAX_VALUE; i++){
-			v++;
-		}
-		long end = System.currentTimeMillis();
-		System.out.println("add task time: "+ (end - start));
-		System.out.println(v);
-	}
-	
 	private static void random() {
 		long start = System.currentTimeMillis();
 		
 		int v=0;
-		for(long i=0;i<1<<30; i++){
-			Random random=new Random();
+		for(long i=0;i<Long.MAX_VALUE; i++){
+			Random random=new Random(); //Wrong!
 			int r=random.nextInt();
 			v+=r;
 			

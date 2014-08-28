@@ -5,5 +5,5 @@ Goal:
 
 
 Step:
-java -XX:+UseParallelGC -Xmx2g ybs.gc.cpu.WrongFlush
+java -XX:+UseParallelGC -Xmx512m ybs.gc.cpu.HighCpu
 Observer CPU Samples (Self Time -- CPU)
