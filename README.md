@@ -39,6 +39,11 @@ Resize of Container
 
 Threads
 
-CPU is Hight?
+High CPU Usage 
 
-Tunning GC
+
+
+At last, I recommend this book for JVM: 
+Java Performance  -- Charlie Hunt, Binu John
+And for Thread/Concurrent:
+Java Concurrency in Practice  -- Brian Goetz, Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes, Doug Lea 

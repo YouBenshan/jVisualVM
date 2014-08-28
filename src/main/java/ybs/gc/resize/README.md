@@ -9,6 +9,6 @@ java -XX:+UseParallelGC -Xmx256m ybs.gc.resize.Main
 Find vast instances of a type (char[]). Find out where are they from.
 
 Set StringBuffer's initial size.
-Compare: the source of this type.
+Compare: Where the instance of this type come from?
 Compare: Minor GC 
 
