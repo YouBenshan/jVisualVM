@@ -5,20 +5,19 @@ Goal:
 
 
 Step:
-Run:
-java -XX:+UseParallelGC -Xmx256m ybs.gc.resize.Main
+Run: java -XX:+UseParallelGC -Xmx256m ybs.gc.resize.Main
 
 Observe: 
 	goto "Porfiler" Tab.
 	click "Record allocations stack traces" in "Memory settings"
 	take "Memory" "Snapshot".
-	"Show Allocations stack traces" of the vast instances of a type (char[]). Find out where are they from.
+	"Show Allocations stack traces" of the vast instances of a type (char[]). Find out how they are allocated.
 
 Improve:
 	Set StringBuffer's initial size in code.
-	Compare: Where the instance of this type come from?
+	Compare: Allocations of this type's instances?
 	Compare: Minor GC
 
 	
-Q:
-Any other classes allocation can be improved in this way?
+Q: Is there any other classes allocation can be improved in this way?
+	ArrayList, HashSet, HashMap。。。
