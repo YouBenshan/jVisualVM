@@ -1,4 +1,4 @@
-Thread
+Threads
 ==
 Goal:
 1. Get familiar with Java Thread state
