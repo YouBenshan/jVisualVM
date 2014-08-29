@@ -44,7 +44,6 @@ Threads
 High CPU Usage 
 
 
-
 I recommend this book for JVM: 
 Java Performance  -- Charlie Hunt, Binu John
 And for Thread/Concurrent:

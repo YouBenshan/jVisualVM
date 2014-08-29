@@ -9,6 +9,7 @@ Heap:
 java -XX:+UseParallelGC -Xmx512m ybs.gc.oom.Heap
 
 
+
 Metaspace:
 Observe "Metaspace" of "Monitor" Tab
 java -XX:+UseParallelGC -Xmx512m -XX:MaxMetaspaceSize=256m ybs.gc.oom.MataSpace
@@ -18,6 +19,10 @@ How to make Metaspace OOM quicker?
 	1. change value of ClassToLoad.ClassToLoad from 1<<12 to 1<<16
 	2. java -XX:+UseParallelGC -Xmx512m -XX:MaxMetaspaceSize=64m ybs.gc.oom.MataSpace
 Where is ClassToLoad.class stored?
+
+
+
+
 
 
 Stack:
