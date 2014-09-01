@@ -39,15 +39,15 @@ Step:
 
 ###[Minor and Full GC](src/main/java/ybs/gc/minorAndFull/README.md)
 
-###[Out Of Memory](src\main\java\ybs\gc\oom\README.md)
+###[Out Of Memory](src/main/java/ybs/gc/oom/README.md)
 
-###[Memory Leak](src\main\java\ybs\gc\memoryLeak\README.md)
+###[Memory Leak](src/main/java/ybs/gc/memoryLeak/README.md)
 
-###[Resize of Container](src\main\java\ybs\gc\resize\README.md)
+###[Resize of Container](src/main/java/ybs/gc/resize/README.md)
 
-###[Threads](src\main\java\ybs\gc\thread\README.md)
+###[Threads](src/main/java/ybs/gc/thread/README.md)
 
-###[High CPU Usage ](src\main\java\ybs\gc\cpu\README.md)
+###[High CPU Usage ](src/main/java/ybs/gc/cpu/README.md)
 
 Conclusion:
 --
