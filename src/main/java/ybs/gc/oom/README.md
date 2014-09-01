@@ -42,3 +42,8 @@ Step:
 		2. remove local variable
 	Observe:
 			"Thread Dump" in "Threads" Tab.
+
+GOTO
+--
+###[Memory Leak](../memoryLeak/README.md)
+###[Index Page](../../../../../../README.md)

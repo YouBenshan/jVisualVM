@@ -57,3 +57,8 @@ Tips:
 	1. Full GC is Much expensive than Minor GC
 	2. Don't instantiate object too early
 	3. Think about instance pool
+	
+GOTO
+--
+###[Out Of Memory](../oom/README.md)
+###[Index Page](../../../../../../README.md)

@@ -29,3 +29,8 @@ Step:
 		Get the dead lock.
 	Q: 
 		How to avoid dead lock?
+
+GOTO
+--
+###[High CPU Usage](../cpu/README.md)
+###[Index Page](../../../../../../README.md)

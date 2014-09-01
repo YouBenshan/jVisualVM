@@ -1,4 +1,4 @@
-CPU
+High CPU Usage
 ==
 Goal:
 --
@@ -15,3 +15,7 @@ Step:
 		Find out which part of code is costly in jVisualVM.
 	Q: 
 		Improve the code.
+		
+GOTO
+--
+###[Index Page](../../../../../../README.md)

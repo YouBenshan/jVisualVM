@@ -8,9 +8,7 @@ Goal:
 Scenarios:
 --
 	Code review is the best way to find bed smell of code.
-	But sometimes you may be asked to improve a legacy project. 
-	And even it contains some jar files that has no source code. 
-	How do you investigate the project?
+	But sometimes you may be asked to improve a legacy project. And even it contains some jar files that has no source code. How do you investigate the project?
 	Now the JVM that running the project will tell you some the project's secret.
 
 Tool:
@@ -43,11 +41,11 @@ Step:
 
 ###[Memory Leak](src/main/java/ybs/gc/memoryLeak/README.md)
 
-###[Resize of Container](src/main/java/ybs/gc/resize/README.md)
+###[Container Resize](src/main/java/ybs/gc/resize/README.md)
 
 ###[Threads](src/main/java/ybs/gc/thread/README.md)
 
-###[High CPU Usage ](src/main/java/ybs/gc/cpu/README.md)
+###[High CPU Usage](src/main/java/ybs/gc/cpu/README.md)
 
 Conclusion:
 --

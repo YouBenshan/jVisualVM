@@ -16,3 +16,9 @@ Step:
 		Generation in "Profile" Tab.
 	Q: 
 		Explain why some of classes have so many generations (compared to other classes)?
+
+		
+GOTO
+--
+###[Container Resize](../resize/README.md)
+###[Index Page](../../../../../../README.md)

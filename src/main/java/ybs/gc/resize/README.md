@@ -1,4 +1,4 @@
-Resize Container
+Container Resize
 ==
 Goal:
 --
@@ -25,3 +25,8 @@ Step:
 	Q: 
 		Is there any other classes allocation can be improved in this way?
 		ArrayList, HashSet, HashMap。。。
+
+GOTO
+--
+###[Threads](../thread/README.md)
+###[Index Page](../../../../../../README.md)
