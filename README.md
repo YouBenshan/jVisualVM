@@ -8,7 +8,9 @@ Goal:
 Scenarios:
 --
 	Code review is the best way to find bed smell of code.
-	But sometimes you may be asked to improve a legacy project. And even it contains some jar files that has no source code. How do you investigate the project?
+	But sometimes you may be asked to improve a legacy project. 
+	And even it contains some jar files that has no source code. 
+	How do you investigate the project?
 	Now the JVM that running the project will tell you some the project's secret.
 
 Tool:
@@ -35,7 +37,7 @@ Step:
 
 ###Then you can go to next steps:
 
-###[Minor and Full GC](src\main\java\ybs\gc\minorAndFull\README.md)
+###[Minor and Full GC](src/main/java/ybs/gc/minorAndFull/README.md)
 
 ###[Out Of Memory](src\main\java\ybs\gc\oom\README.md)
 
@@ -50,6 +52,8 @@ Step:
 Conclusion:
 --
 	I recommend this book for JVM:
-		Java Performance  -- Charlie Hunt, Binu John
+		Java Performance  
+			-- Charlie Hunt, Binu John
 	And for Thread/Concurrent:
-		Java Concurrency in Practice  -- Brian Goetz, Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes, Doug Lea 
+		Java Concurrency in Practice  
+			-- Brian Goetz, Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes, Doug Lea 
