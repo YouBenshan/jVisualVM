@@ -8,7 +8,7 @@ Goal:
 Scenarios:
 --
 	Code review is the best way to find bed smell of code.
-	But sometimes you may be asked to improve a legacy project. And even it contains some jar files that has no source code. How do you investigate the project?
+	But sometimes you may be asked to improve a legacy project. Or even it contains some jar files that has no source code. How do you investigate the project?
 	Now the JVM that running the project will tell you some the project's secret.
 
 Tool:
