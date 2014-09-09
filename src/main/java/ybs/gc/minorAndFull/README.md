@@ -2,14 +2,14 @@ Minor & Full GC
 ==
 Goal:
 --
-	1. Observe Minor GC
-	2. Feel Stop-The-World of Full GC
+* Observe Minor GC
+* Feel Stop-The-World of Full GC
 
 
 Step:
 --
 	Run: 
-		java -XX:+UseParallelGC -Xms512m -Xmx512m ybs.gc.minorAndFull.Main
+		`java -XX:+UseParallelGC -Xms512m -Xmx512m ybs.gc.minorAndFull.Main`
 	Observe:
 		"Overview" Tab.
 			The arguments of java command is show in this tab.
