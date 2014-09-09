@@ -16,11 +16,11 @@ Step:
 		Explain the colorful bars. And read Java Doc of "java.lang.Thread.State".
 	Q: 
 		What is the state of "Parking" of Thread?
+		sun.misc.Unsafe.park(boolean, long)
 	Observe: 
 		"Thread Dump" in "Threads" Tab:
 	Q: 
-		Expain the Contention of locks.
-	
+		Explain the Contention of locks.
 	
 	Run: 
 		java -XX:+UseParallelGC -Xmx512m ybs.gc.thread.DeadLock
@@ -29,6 +29,7 @@ Step:
 		Get the dead lock.
 	Q: 
 		How to avoid dead lock?
+
 
 GOTO
 --

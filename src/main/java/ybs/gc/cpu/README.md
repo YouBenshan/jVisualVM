@@ -5,6 +5,7 @@ Goal:
 	1. Observe CUP usage
 	2. Show the importance of IO buffer.
 
+
 Step:
 --
 	Run: 
@@ -15,7 +16,8 @@ Step:
 		Find out which part of code is costly in jVisualVM.
 	Q: 
 		Improve the code.
-		
+
+
 GOTO
 --
 ###[Index Page](../../../../../../README.md)
