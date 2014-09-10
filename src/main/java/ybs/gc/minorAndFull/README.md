@@ -15,18 +15,18 @@ Step:
 		The arguments of java command is show in this tab.
 	 * `Monitor` Tab.
 * Q:   
-	 * Explain the relationship between "GC activity/CPU usage" and change of "Heap Size".  
+	 * Explain the relationship between `GC activity/CPU usage` and change of `Heap Size`.  
 	*`Heap Size` downs reflect the activities of GC. Small ones are `Minor GC`, big ones are 'Full GC'. Full GC needs much more cpu usage.*
 * Observe:  
 	 * `Visual GC` Tab.
 * Q:  
-	 * Explain Minor GC's process(ParallelGC).  
+	 * Explain `Minor GC`'s process(ParallelGC).  
 	*Keywords: `Eden`, `Suvior`, `age`, `threshold`.*
-	 * `Explain Full GC's process(ParallelGC)?`	  
+	 * Explain Full GC's process(ParallelGC)?	  
 	*Keywords: `Mark-Compact` vs `Mark-Sweep`*
 	 * Which one has more impact the Full GC time: Survival instance size or Garbage size?  
 	*Survival instance size*
-	 * Explain how to choose GC argument according to 3 attributes of Performance: Throughput, Latency, Footprint.*  
+	 * Explain how to choose GC argument according to 3 attributes of Performance: Throughput, Latency, Footprint.  
 	*-XX:+UseG1GC  
 	-XX:+UseSerialGC  
 	-XX:+UseConcMarkSweepGC  
