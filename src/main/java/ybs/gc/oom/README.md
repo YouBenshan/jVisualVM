@@ -2,7 +2,7 @@ Out Of Memory
 ==
 Goal:
 --
-* Explain How Out Of Memory happens.
+* Explain how Out Of Memory happens.
 
 
 Step:
@@ -13,6 +13,7 @@ Step:
 * Q:  
 	* How to dump the heap in product environment?  
 	*java -XX:+UseParallelGC -Xmx512m -XX:+HeapDumpOnOutOfMemoryError ybs.gc.oom.Heap  
+	Download "xxx.hprof" file from product environment  
 	Use JVisualVM to observe the "xxx.hprof" file*
 
 ###Metaspace:
@@ -21,11 +22,11 @@ Step:
 * Observe:  
 	* `Metaspace` of `Monitor` Tab
 * Q:  
-	* How to make Metaspace OOM quicker?  
+	* How to make Meta Space OOM quicker?  
 	*Change value of ClassToLoad.CONSTANT from 1<<12 to 1<<16  
 	java -XX:+UseParallelGC -Xmx512m -XX:MaxMetaspaceSize=64m ybs.gc.oom.MataSpace*
 	* Where is ClassToLoad.CONSTANT stored?  
-	*Meta space*
+	*Meta Space*
 
 ###Stack:
 * Run:  
@@ -35,8 +36,8 @@ Step:
 	* Run `java -XX:+UseParallelGC -Xmx512m ybs.gc.oom.StackOverFlow 8192` and compare the Max output number. Why they are nearly the same?  
 	*The byteArray instance is stored in heap. The stack only have a reference to the byteArray instance.*  
 	* How to make the Max output number larger?  
-	*java -XX:+UseParallelGC -Xmx512m -Xss2m ybs.gc.oom.StackOverFlow 1  
-	remove local variable*
+	*Increase stack size -Xsssize: `java -XX:+UseParallelGC -Xmx512m -Xss2m ybs.gc.oom.StackOverFlow 1`  
+	Remove local variable*
 * Observe:  
 	* `Thread Dump` in `Threads` Tab.
 
