@@ -31,9 +31,9 @@ Step:
 	* Scan every tabs:
 	`Monitor`, `Thread`, `Sampler`, `Visual GC` (and Profiler for Some Applications)
 * Scan these pages:  
-		[jVisualVM Documentation](http://visualvm.java.net/docindex.html)
-		[jVisualVM Plugins](http://visualvm.java.net/plugins.html)
-		[JVM Arguments](http://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html)
+	* [jVisualVM Documentation](http://visualvm.java.net/docindex.html)
+	* [jVisualVM Plugins](http://visualvm.java.net/plugins.html)
+	* [JVM Arguments](http://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html)
 
 ###Then you can go to next steps:
 
