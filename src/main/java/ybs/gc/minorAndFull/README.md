@@ -15,8 +15,8 @@ Step:
 	 * `Monitor` Tab.
 * Q: Explain the relationship between "GC activity/CPU usage" and change of "Heap Size".
 		
-	Observe:	
-		"Visual GC" Tab.
+* Observe:	
+	 * "Visual GC" Tab.
 	Q: 
 		Explain Minor GC's process(ParallelGC).
 		Keywords: Eden, Suvior, age, threshold.
