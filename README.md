@@ -19,7 +19,7 @@ CPU:	Intel Core i7-4600U
 RAM:	8G  
 JDK:	1.8.0_20  
 Optional:  
-Maven:	3.2.2
+Maven:	3.2.2  
 Eclipse:	4.4
 
 
