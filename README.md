@@ -13,12 +13,14 @@ The JVM will give you some clues to bad smell of code and bottleneck of performa
 
 Tool:
 --
-	tested on:
-	OS:		Windows 7 Professional-SP1, 64-bit
-	CPU:	Intel Core i7-4600U
-	RAM:	8G
-	JDK:	1.8.0_20
-	Maven 3.2.2 and Eclipse 4.4 (Not necessary. It can be compile with javac from JDK)
+Have been tested on:  
+OS:		Windows 7 Professional-SP1, 64-bit  
+CPU:	Intel Core i7-4600U  
+RAM:	8G  
+JDK:	1.8.0_20  
+Optional:  
+Maven:	3.2.2
+Eclipse:	4.4
 
 
 Step:
