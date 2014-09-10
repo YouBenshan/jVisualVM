@@ -17,12 +17,12 @@ Step:
 	* What is the state of "Parking" of Thread?  
 	*sun.misc.Unsafe.park(boolean, long)*
 * Observe: 
-	`Thread Dump` in `Threads` Tab:
+	* `Thread Dump` in `Threads` Tab:
 * Q: 
 	* Explain the Contention of locks.
 	
 * Run:  
-`java -XX:+UseParallelGC -Xmx512m ybs.gc.thread.DeadLock`
+	`java -XX:+UseParallelGC -Xmx512m ybs.gc.thread.DeadLock`
 * Observe: 
 	* `Thread Dump` in `Threads` Tab  
 		Get the dead lock.
