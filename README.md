@@ -14,7 +14,7 @@ Scenarios:
 Tool:
 --
 	tested on:
-	OS:		Windows 7 Professional-SP1, 64-bit
+	OS:	Windows 7 Professional-SP1, 64-bit
 	CPU:	Intel Core i7-4600U
 	RAM:	8G
 	JDK:	1.8.0_20
