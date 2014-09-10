@@ -7,7 +7,7 @@ Goal:
 
 Step:
 --
-* Run: 
+* Run:  
 `java -XX:+UseParallelGC -Xmx256m ybs.gc.memoryLeak.Main`
 * Observe:
 	* MemoryLeakObject's instance number in `Sample` Tab
