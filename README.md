@@ -7,9 +7,9 @@ Goal:
 
 Scenarios:
 --
-	Code review is still the best way to find bed smell of code.
-	JVM profiling is another option, when you improve a legacy project/jar, and even when it has a lot of dependences. You have no time to read the code one by one.
-	The JVM will give you some clues to bad smell of code and bottleneck of performance.
+Code review is still the best way to find bed smell of code.  
+JVM profiling is another option, when you improve a legacy project/jar, and even when it has a lot of dependences. You have no time to read the code one by one.  
+The JVM will give you some clues to bad smell of code and bottleneck of performance.
 
 Tool:
 --
