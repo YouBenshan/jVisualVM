@@ -15,8 +15,8 @@ Step:
 		The arguments of java command is show in this tab.  
 	 * `Monitor` Tab.
 * Q:  
-	Explain the relationship between "GC activity/CPU usage" and change of "Heap Size".
-		
+	Explain the relationship between `GC activity/CPU usage` and change of `Heap Size`.  
+	*`Heap Size` downs reflect the activities of GC. Small ones are `Minor GC`, big ones are 'Full GC'. Full GC needs much more cup usage.*
 * Observe:  
 	`Visual GC` Tab.
 * Q:  
