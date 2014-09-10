@@ -35,7 +35,7 @@ Step:
 	* [jVisualVM Plugins](http://visualvm.java.net/plugins.html)
 	* [JVM Arguments](http://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html)
 
-###Then you can go to next steps:
+###Next Steps:
 
 * [Minor and Full GC](src/main/java/ybs/gc/minorAndFull/README.md)
 * [Out Of Memory](src/main/java/ybs/gc/oom/README.md)
