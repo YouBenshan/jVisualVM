@@ -22,8 +22,8 @@ Step:
 	* `Metaspace` of `Monitor` Tab
 * Q:  
 	* How to make Metaspace OOM quicker?  
-	*1. Change value of ClassToLoad.CONSTANT from 1<<12 to 1<<16
-	2. java -XX:+UseParallelGC -Xmx512m -XX:MaxMetaspaceSize=64m ybs.gc.oom.MataSpace*
+	*Change value of ClassToLoad.CONSTANT from 1<<12 to 1<<16  
+	java -XX:+UseParallelGC -Xmx512m -XX:MaxMetaspaceSize=64m ybs.gc.oom.MataSpace*
 	* Where is ClassToLoad.CONSTANT stored?
 	*`meta space`*
 
@@ -35,8 +35,8 @@ Step:
 	* Run "java -XX:+UseParallelGC -Xmx512m ybs.gc.oom.StackOverFlow 8192" and compare the Max output number.  
 		Why they are nearly the same?  
 	* How to make the Max output number larger?  
-	*1. java -XX:+UseParallelGC -Xmx512m -Xss2m ybs.gc.oom.StackOverFlow 1
-	2. remove local variable*
+	*java -XX:+UseParallelGC -Xmx512m -Xss2m ybs.gc.oom.StackOverFlow 1
+	remove local variable*
 * Observe:  
 	* `Thread Dump` in `Threads` Tab.
 
