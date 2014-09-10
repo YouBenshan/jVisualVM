@@ -14,7 +14,8 @@ Step:
 	MemoryLeakObject's instance number keeps steady around "STACK_SIZE". Seems will never be GC.
 	* `Memory` in `Profile` Tab.(Don't forget choose "Record allocations stack traces" in setting.)  
 	`byte[]`'s generations keeps increasing.  
-	Take snapshot and show allocations stack traces: Only the generations of the byte[] allocated by MemoryLeakObject.<init> is very big. 
+	* Take snapshot and show allocations stack traces  
+	Only the generations of the byte[] allocated by MemoryLeakObject.<init> is very big. 
 * Q: 
 	* What's the memory leak?  
 	*Some instances in the heap is out of date. They will be never be used, but for some reason they cannot be GC.*

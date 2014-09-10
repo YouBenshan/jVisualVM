@@ -14,7 +14,10 @@ Step:
 	`CPU` in `Samples` Tab, `Self Time(CPU)`.
 * Q:  
 	* Find out which part of code is costly in jVisualVM.  
+	*Take a Snapshot of `CPU sample`. Pay attention to the `BufferedWriter.flush()` in CallTree.*
 	* Improve the code.  
+	*See in the code.  
+	Read more about the relationship of CPU System Usage and Java IO in book "Java Performance".*
 
 
 GOTO

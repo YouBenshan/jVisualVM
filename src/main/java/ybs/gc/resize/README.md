@@ -8,18 +8,20 @@ Goal:
 Step:
 --
 * Run:  
-`java -XX:+UseParallelGC -Xmx256m ybs.gc.resize.Main`
+	`java -XX:+UseParallelGC -Xmx256m ybs.gc.resize.Main false`
 
 * Observe: 
-	* Goto `Porfiler` Tab.
-	* Click `Record allocations stack traces` in `Memory settings`
-	* Take `Memory` `Snapshot`.
-	* `Show Allocations stack traces` of the vast instances of a type (char[]).
+	* In `Porfiler` Tab: click `Record allocations stack traces` in `Memory settings`, take `Memory` `Snapshot`,  `Show Allocations stack traces` of the vast instances of a type (char[]).  
+	Most char[] are allocated by `java.util.Array.copyOf(char[],int)` method.  
+	This shows the container(StringBuffer) is resizing.  
+	The StringBuffer instance is big, large heap space is allocated and GC for this activity.
 
-* Improve:
-	* Set StringBuffer's initial size in code.
-	* Compare: Allocations of this type's instances?
-	* Compare: Minor GC
+* Run:  
+	`java -XX:+UseParallelGC -Xmx256m ybs.gc.resize.Main true`
+	* Compare: Allocations of this type's instances?  
+	In `Porfiler` Tab: Most char[] instances are allocated by `AbstractStringBuffer.<init>` method.
+	* Compare: Minor GC  
+	In `Visual GC` Tab: The activities of Minor GC is much less than before.
 
 * Q: 
 	* Is there any other classes allocation can be improved in this way?  
