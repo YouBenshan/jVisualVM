@@ -14,7 +14,7 @@ Scenarios:
 Tool:
 --
 	tested on:
-	OS:	Windows 7 Professional-SP1, 64-bit
+	OS:		Windows 7 Professional-SP1, 64-bit
 	CPU:	Intel Core i7-4600U
 	RAM:	8G
 	JDK:	1.8.0_20
@@ -24,11 +24,11 @@ Tool:
 Step:
 --
 ###KickOff: Get familiar with jVisualVM
-	1. install plugin: Visual GC, and restart
-	2. Observe a application's JVM with jVisualVM:
-		Scan every tabs:
-			Monitor, Thread, Sampler, Visual GC (and Profiler for Some Applications)
-	3. Scan these pages:
+* install plugin: Visual GC, and restart  
+* Observe a application's JVM with jVisualVM:  
+	* Scan every tabs:
+	`Monitor`, `Thread`, `Sampler`, `Visual GC` (and Profiler for Some Applications)
+* Scan these pages:  
 		[jVisualVM Documentation](http://visualvm.java.net/docindex.html)
 		[jVisualVM Plugins](http://visualvm.java.net/plugins.html)
 		[JVM Arguments](http://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html)
