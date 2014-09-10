@@ -8,7 +8,7 @@ Goal:
 
 Step:
 --
-* Run:   
+* Run:
 `java -XX:+UseParallelGC -Xms512m -Xmx512m ybs.gc.minorAndFull.Main`
 * Observe:  
 	 * `Overview` Tab:  
@@ -39,17 +39,17 @@ Step:
 	-Xms  
 	-Xmx*
 		
-* Observe:  
+* Observe:
 	 * Full GC's Stop-The-World:  
 		See the Stdout , normally the output value is <1050, but sometime is 1100~1300(around Full GC)
-* Q:  
+* Q:
 	 * How about: java -XX:+UseParallelGC -Xms2G -Xmx2G ybs.gc.minorAndFull.Main (make sleep shorter)?
 	*The output numbers are much bigger then before*
-* Q:  
+* Q:
 	 * Does Stop-The-World only existing during Full GC?  
 	*No*
 		
-* Observe:  
+* Observe:
 	 * Source code--SoftReference.
 * Q:  
 	 * Compare it with other type of References.  
