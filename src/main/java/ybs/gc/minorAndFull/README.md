@@ -27,14 +27,15 @@ Step:
 	 * Which one has more impact the Full GC time: Survival instance size or Garbage size?  
 	*Survival instance size*
 	 * Explain how to choose GC argument according to 3 attributes of Performance: Throughput, Latency, Footprint.  
-	*-XX:+UseG1GC  
+	 -XX:+UseG1GC  
 	-XX:+UseSerialGC  
 	-XX:+UseConcMarkSweepGC  
 	-XX:+UseParallelGC  
 	-XX:+UseParallelOldGC  
 	-XX:+UseParNewGC  
 	-Xms  
-	-Xmx*
+	-Xmx  
+	*Read the book "Java Performance" about G1, Serial, CMS, Parallel GC.*
 		
 * Observe:  
 	 * Full GC's Stop-The-World:  
