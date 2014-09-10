@@ -25,14 +25,14 @@ Step:
 	*Change value of ClassToLoad.CONSTANT from 1<<12 to 1<<16  
 	java -XX:+UseParallelGC -Xmx512m -XX:MaxMetaspaceSize=64m ybs.gc.oom.MataSpace*
 	* Where is ClassToLoad.CONSTANT stored?  
-	*`meta space`*
+	*Meta space*
 
 ###Stack:
 * Run:  
 	`java -XX:+UseParallelGC -Xmx512m ybs.gc.oom.StackOverFlow 1`
 
 * Q:  
-	* Run "java -XX:+UseParallelGC -Xmx512m ybs.gc.oom.StackOverFlow 8192" and compare the Max output number. Why they are nearly the same?  
+	* Run `java -XX:+UseParallelGC -Xmx512m ybs.gc.oom.StackOverFlow 8192` and compare the Max output number. Why they are nearly the same?  
 	*The byteArray instance is stored in heap. The stack only have a reference to the byteArray instance.*  
 	* How to make the Max output number larger?  
 	*java -XX:+UseParallelGC -Xmx512m -Xss2m ybs.gc.oom.StackOverFlow 1  
