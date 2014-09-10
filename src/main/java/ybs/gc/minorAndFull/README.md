@@ -8,8 +8,8 @@ Goal:
 
 Step:
 --
-	Run: 
-		`java -XX:+UseParallelGC -Xms512m -Xmx512m ybs.gc.minorAndFull.Main`
+* Run: 
+`java -XX:+UseParallelGC -Xms512m -Xmx512m ybs.gc.minorAndFull.Main`
 	Observe:
 		"Overview" Tab.
 			The arguments of java command is show in this tab.
