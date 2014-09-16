@@ -39,7 +39,7 @@ Step:
 	 * Full GC's Stop-The-World:  
 		See the Stdout , normally the output value is <1050, but sometime is 1100~1300(around Full GC)
 * Q:  
-	 * How about: `java -XX:+UseParallelGC -Xms2G -Xmx2G ybs.gc.minorAndFull.Main 1` (make sleep shorter)?  
+	 * How about: `java -XX:+UseParallelGC -Xms2G -Xmx2G ybs.gc.minorAndFull.Main 1` (argument=1 makes sleep shorter)?  
 	*The output numbers are much bigger then before for the heap are much bigger.*
 	 * Does Stop-The-World only existing during Full GC?  
 	*No*

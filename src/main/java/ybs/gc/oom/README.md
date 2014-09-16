@@ -18,13 +18,13 @@ Step:
 
 ###Metaspace:
 * Run:  
-	`java -XX:+UseParallelGC -Xmx512m -XX:MaxMetaspaceSize=256m ybs.gc.oom.MataSpace`
+	`java -XX:+UseParallelGC -Xmx512m -XX:MaxMetaspaceSize=256m ybs.gc.oom.MataSpace small`
 * Observe:  
 	* `Metaspace` of `Monitor` Tab
 * Q:  
 	* How to make Meta Space OOM quicker?  
-	*Change value of ClassToLoad.CONSTANT from 1<<12 to 1<<16  
-	java -XX:+UseParallelGC -Xmx512m -XX:MaxMetaspaceSize=64m ybs.gc.oom.MataSpace*
+	*Make the value of ClassToLoad.CONSTANT bigger: `java -XX:+UseParallelGC -Xmx512m -XX:MaxMetaspaceSize=256m ybs.gc.oom.MataSpace big`  
+	Make the Max Meta Space samller: `java -XX:+UseParallelGC -Xmx512m -XX:MaxMetaspaceSize=64m ybs.gc.oom.MataSpace`*
 	* Where is ClassToLoad.CONSTANT stored?  
 	*Meta Space*
 
