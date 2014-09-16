@@ -40,7 +40,7 @@ Step:
 	* How to make the Max output number larger?  
 	*Increase stack size -Xsssize:  
 	`java -XX:+UseParallelGC -Xmx512m -Xss2m ybs.gc.oom.StackOverFlow 1`  
-	Remove some local variables*
+	Remove some local variables ("byteArrayX")*
 * Observe:  
 	* `Thread Dump` in `Threads` Tab.
 
