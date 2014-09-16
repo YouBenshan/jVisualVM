@@ -35,11 +35,12 @@ Step:
 	`java -XX:+UseParallelGC -Xmx512m ybs.gc.oom.StackOverFlow 1`
 
 * Q:  
-	* Run `java -XX:+UseParallelGC -Xmx512m ybs.gc.oom.StackOverFlow 8192` and compare the Max output number. Why they are nearly the same?  
+	* Run `java -XX:+UseParallelGC -Xmx512m ybs.gc.oom.StackOverFlow 1024` and compare the Max output number. Why they are nearly the same?  
 	*The byteArray instance is stored in heap. The stack only have a reference to the byteArray instance.*  
 	* How to make the Max output number larger?  
-	*Increase stack size -Xsssize: `java -XX:+UseParallelGC -Xmx512m -Xss2m ybs.gc.oom.StackOverFlow 1`  
-	Remove local variable*
+	*Increase stack size -Xsssize:  
+	`java -XX:+UseParallelGC -Xmx512m -Xss2m ybs.gc.oom.StackOverFlow 1`  
+	Remove some local variables*
 * Observe:  
 	* `Thread Dump` in `Threads` Tab.
 
