@@ -22,6 +22,13 @@ public class HighCpu {
 				random();
 			}
 		}, "random").start();
+		
+		new Thread(new Runnable(){
+			@Override
+			public void run() {
+				mix();
+			}
+		}, "mix").start();
 	}
 
 	private static void write() {
@@ -59,6 +66,36 @@ public class HighCpu {
 		long end = System.currentTimeMillis();
 		System.out.println("random task time: "+ (end - start));
 		System.out.println(v);
+	}
+	
+	private static void mix() {
+		
+		while(true){
+		File file;
+		try {
+			file = File.createTempFile("tmp", "tmp");
+			try (FileWriter fw = new FileWriter(file);
+				BufferedWriter bw = new BufferedWriter(fw, 1<<10);
+					) {
+				for (int i = 0; i < (1 << 20); i++) {
+					bw.write("a");
+					bw.flush(); //Wrong!
+				}
+			}
+			file.delete();
+		
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		int v=0;
+		for(int i=0;i<(1 << 20); i++){
+			Random random=new Random(); //Wrong!
+			int r=random.nextInt();
+			v+=r;
+			
+		}
+		System.out.println(v);
+		}
 	}
 
 }
