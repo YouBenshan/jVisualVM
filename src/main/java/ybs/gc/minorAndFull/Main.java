@@ -11,17 +11,17 @@ public class Main {
 	private static final List<SoftReference<Byte[]>> references = new ArrayList<>();
 
 	public static void main(String[] args) throws InterruptedException {
-
+		int sleepTime= Integer.valueOf(args[0]);
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
 				while (true) {
-					Byte[] byteArray = new Byte[1 << 13];
+					Byte[] byteArray = new Byte[1 << 14];
 					SoftReference<Byte[]> reference = new SoftReference<>(
 							byteArray);
 					references.add(reference);
 					try {
-						Thread.sleep(4);
+						Thread.sleep(sleepTime);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -34,12 +34,10 @@ public class Main {
 			@Override
 			public void run() {
 				while (true) {
-					Byte[] byteArray = new Byte[1 << 13];
-					// references.add(reference);
+					Byte[] byteArray = new Byte[1 << 14];
 					try {
 						Thread.sleep(1);
 					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}
