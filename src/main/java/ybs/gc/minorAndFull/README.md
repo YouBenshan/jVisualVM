@@ -20,9 +20,9 @@ Step:
 * Observe:  
 	 * `Visual GC` Tab.
 * Q:  
-	 * Explain `Minor GC`'s process(ParallelGC).  
+	 * Explain `Minor GC`'s process (ParallelGC).  
 	*Keywords: Eden, Suvior, age, threshold.*
-	 * Explain Full GC's process(ParallelGC)?	  
+	 * Explain Full GC's process (ParallelGC)?	  
 	*Keywords: Mark-Compact vs Mark-Sweep*
 	 * Explain how to choose GC argument according to 3 attributes of Performance: Throughput, Latency, Footprint.  
 	-XX:+UseG1GC  
