@@ -1,4 +1,4 @@
-Observe JVM with jVisualVM
+Presentation: Observe JVM with jVisualVM
 ==
 Goal:
 --
