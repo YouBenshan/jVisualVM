@@ -23,7 +23,7 @@ Step:
 	* Compare: Minor GC  
 	In `Visual GC` Tab: The activities of Minor GC is much less than before.
 
-* Q: 
+* Question: 
 	* Is there any other classes allocation can be improved in this way?  
 	*ArrayList, HashSet, HashMap。。。*
 

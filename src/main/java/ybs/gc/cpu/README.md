@@ -12,7 +12,7 @@ Step:
 	`java -XX:+UseParallelGC -Xmx512m ybs.gc.cpu.HighCpu`
 * Observer:  
 	`CPU` in `Samples` Tab, `Self Time(CPU)`.
-* Q:  
+* Question:  
 	* Find out which part of code is costly in jVisualVM.  
 	*Take a Snapshot of `CPU sample`. Pay attention to the `BufferedWriter.flush()` in CallTree.*
 	* Improve the code.  

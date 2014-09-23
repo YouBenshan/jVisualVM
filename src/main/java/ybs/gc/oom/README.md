@@ -10,7 +10,7 @@ Step:
 ###Heap:
 * Run:  
 	`java -XX:+UseParallelGC -Xmx512m ybs.gc.oom.Heap`
-* Q:  
+* Question:  
 	* How to dump the heap in product environment?  
 	*java -XX:+UseParallelGC -Xmx512m -XX:+HeapDumpOnOutOfMemoryError ybs.gc.oom.Heap  
 	Download "xxx.hprof" file from product environment  
@@ -21,7 +21,7 @@ Step:
 	`java -XX:+UseParallelGC -Xmx512m -XX:MaxMetaspaceSize=256m ybs.gc.oom.MataSpace small`
 * Observe:  
 	* `Metaspace` of `Monitor` Tab
-* Q:  
+* Question:  
 	* How to make Meta Space OOM quicker?  
 	*Make the value of ClassToLoad.CONSTANT bigger:  
 	`java -XX:+UseParallelGC -Xmx512m -XX:MaxMetaspaceSize=256m ybs.gc.oom.MataSpace big`  
@@ -34,7 +34,7 @@ Step:
 * Run:  
 	`java -XX:+UseParallelGC -Xmx512m ybs.gc.oom.StackOverFlow 1`
 
-* Q:  
+* Question:  
 	* Run `java -XX:+UseParallelGC -Xmx512m ybs.gc.oom.StackOverFlow 1024` and compare the Max output number. Why they are nearly the same?  
 	*The byteArray instance is stored in heap. The stack only have a reference to the byteArray instance.*  
 	* How to make the Max output number larger?  
