@@ -24,7 +24,7 @@ Step:
 * Question:  
 	* How to make Meta Space OOM quicker?  
 	*Make the Max Meta Space smaller:  
-	`java -XX:+UseParallelGC -Xmx2G -XX:MaxMetaspaceSize=64m ybs.gc.oom.MataSpace small`
+	`java -XX:+UseParallelGC -Xmx2G -XX:MaxMetaspaceSize=64m ybs.gc.oom.MataSpace small`  
 	Make the value of ClassToLoad.CONSTANT bigger:  
 	`java -XX:+UseParallelGC -Xmx2G -XX:MaxMetaspaceSize=64m ybs.gc.oom.MataSpace big`*
 	* Where is ClassToLoad.CONSTANT stored?  
