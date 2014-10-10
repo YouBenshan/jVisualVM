@@ -16,7 +16,7 @@ public class StackOverFlow {
 		Byte[] byteArray3 = new Byte[size];
 		Byte[] byteArray4 = new Byte[size];
 		Byte[] byteArray5 = new Byte[size];
-		Byte[] byteArray6= new Byte[size];
+		Byte[] byteArray6 = new Byte[size];
 		Byte[] byteArray7 = new Byte[size];
 		Byte[] byteArray8 = new Byte[size];
 		Byte[] byteArray9 = new Byte[size];
